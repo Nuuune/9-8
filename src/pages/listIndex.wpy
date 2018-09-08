@@ -251,6 +251,15 @@
         color: #fff;
       }
     }
+    .flex5 {
+      .layout;
+      flex: 5.5;
+      background: #adadad;
+      text {
+        font-size: 30rpx;
+        color: #fff;
+      }
+    }
   }
 
   .backTop {
@@ -262,6 +271,57 @@
     image {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  .share-box {
+    position: fixed;
+    z-index: 99;
+    height: 328rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e9e8fb;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    .close {
+      align-self: flex-end;
+      width: 45rpx;
+      height: 45rpx;
+      margin-top: 10rpx;
+      margin-right: 18rpx;
+      margin-bottom: 10rpx;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .qipao {
+      width: 652rpx;
+      height: 132rpx;
+      margin-bottom: 16rpx;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .btn {
+      width: 626rpx;
+      height: 90rpx;
+      border-radius: 45rpx;
+      font-size: 26rpx;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: @btn-primary;
+      image {
+        width: 45rpx;
+        height: 35rpx;
+        margin-right: 18rpx;
+      }
     }
   }
 </style>
@@ -342,13 +402,21 @@
     <view class="flex1"><image src="../resource/img/kefu.png" class="icon"></image><text>客服</text></view>
     <view class="flex2"><text>￥10</text><text>单独购买</text></view>
     <view class="flex3"><text>￥9</text><text>发起拼单</text></view>
+    <!-- <view class="flex5"><text>报名已满</text></view> -->
   </view>
   <!-- 底部导航 E -->
   <!-- 返回顶部 S -->
-  <view class="backTop">
+  <!-- <view class="backTop">
     <image src="../resource/img/backTop.png"></image>
-  </view>
+  </view> -->
   <!-- 返回顶部 E -->
+  <!-- 邀请分享 S -->
+  <!-- <view class="share-box">
+    <view class="close"><image src="../resource/img/close.png"></image></view>
+    <view class="qipao"><image src="../resource/img/qipao.png"></image></view>
+    <view class="btn"><image src="../resource/img/wx.png"></image>分享给您的好友</view>
+  </view> -->
+  <!-- 邀请分享 E -->
 </template>
 <script>
   import wepy from 'wepy'

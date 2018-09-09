@@ -1,0 +1,24 @@
+<style lang="less">
+
+</style>
+<template>
+  <StarRating total="5" num="5" :containerStyle="containerStyle"></StarRating>
+</template>
+<script>
+  import wepy from 'wepy'
+  import StarRating from './StarRating'
+
+  export default class Star5Five extends wepy.component {
+    components = {
+      StarRating
+    };
+
+    data = {
+
+    };
+
+    props = {
+      containerStyle: String
+    };
+  }
+</script>
